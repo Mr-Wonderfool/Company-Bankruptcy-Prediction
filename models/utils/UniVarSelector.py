@@ -24,15 +24,16 @@ class UniVarSelector:
             scores = selector.scores_
         self.scores = scores / scores.max() # normalize
         self.indx = np.argsort(self.scores)[::-1] # descending order
-        return self.selected_feautes
-    def plot(self, figsize=(15,6), threshold=0.1):
+        return self.selected_feautes, self.indx
+    def plot(self, columns, figsize=(15,6), threshold=0.1):
         fig = plt.figure(figsize=figsize)
         ax = fig.add_subplot(111)
         ax.set_title(f"Feature importances (with score threshold = {threshold})")
         filter_ = np.count_nonzero(self.scores > threshold)
         X_indices = range(filter_)
-        ax.bar(X_indices, self.scores[self.indx][:filter_], width=.5,
-                label=r'Univariate score ($-\log (p_{value})$)', color='b')
+        ax.bar(X_indices, self.scores[self.indx][:filter_], width=.75,
+                label=r'mutual information score', color='b')
         ax.set_xticks(X_indices, self.indx[:filter_])
+        ax.set_xticklabels(columns[self.indx[:filter_]], rotation=30, fontsize='small', ha='right')
         plt.legend()
         return ax
