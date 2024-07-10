@@ -88,6 +88,12 @@ $Var(X_i)=\sigma^2,Cov(X_i,X_j)=\rho\sigma^2$，
     $\coloneqq Q_3-Q_1$。在$[Q_1-1.5IQR, Q_3+1.5IQR]$之外的数据认为是
     异常值，将其相应替换为上下限值。其中1.5是一个经验值，可以人为规定。
     第一步的过程展示在图\ref{fig:IQR-outlier-detection}中。
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=.6\textwidth]{images/IQR_outlier_selection.png}
+        \caption{IQR方法检测并替换异常值过程}
+        \label{fig:IQR-outlier-detection}
+    \end{figure}
     \item 去除冗余特征。分为两部分：
     \begin{enumerate}
         \item 删除方差小于0.1的特征，即变动幅度非常小的特征
@@ -117,16 +123,10 @@ $Var(X_i)=\sigma^2,Cov(X_i,X_j)=\rho\sigma^2$，
     \mathbb{R}^k
     \end{equation*}
 \end{enumerate}
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=.6\textwidth]{images/IQR_outlier_selection.png}
-    \caption{IQR方法检测并替换异常值过程}
-    \label{fig:IQR-outlier-detection}
-\end{figure}
 
-% \paragraph{集成学习}
-% 树形模型的是方差较大、偏差较小的模型，弱学习器与之相反，其方差较小、偏差较大。
-% 集成弱学习器的过程是降低偏差的过程，直观上亦是对空间进行分割
+\paragraph{集成学习}
+树形模型的是方差较大、偏差较小的模型，弱学习器与之相反，其方差较小、偏差较大。
+集成弱学习器的过程是降低偏差的过程，直观上亦是对空间进行分割
 
 \subsubsection{数值求解}
 \paragraph{高斯判别分析}
@@ -135,7 +135,7 @@ $Var(X_i)=\sigma^2,Cov(X_i,X_j)=\rho\sigma^2$，
 求解GDA参数，对测试集进行预测，得到的混淆矩阵展示在图\ref{fig:confusion-matrix-GDA}中。
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=.6\textwidth]{images/confusion_matrix_GDA.png}
+    \includegraphics[width=.5\textwidth]{images/confusion_matrix_GDA.png}
     \caption{GDA模型的混淆矩阵}
     \label{fig:confusion-matrix-GDA}
 \end{figure}
@@ -148,7 +148,7 @@ $Var(X_i)=\sigma^2,Cov(X_i,X_j)=\rho\sigma^2$，
 收敛。在原始的测试集上进行测试，得到的混淆矩阵展示在图\ref{fig:confusion-matrix-random-forest}中。
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=.6\textwidth]{images/random_forest_confusion_matrix_unbalanced.png}
+    \includegraphics[width=.5\textwidth]{images/random_forest_confusion_matrix_unbalanced.png}
     \caption{随机森林模型的混淆矩阵}
     \label{fig:confusion-matrix-random-forest}
 \end{figure}
