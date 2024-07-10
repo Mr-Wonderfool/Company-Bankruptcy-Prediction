@@ -107,17 +107,14 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 
 %\RequirePackage[title,toc,titletoc]{appendix}
 
-% \RequirePackage[
-%     backend=biber,
-%     style=gb7714-2015,
-%     natbib=true,
-% ]{biblatex}
+\RequirePackage[
+    backend=biber,
+    style=gb7714-2015,
+    natbib=true,
+]{biblatex}
+\addbibresource{ref.bib}
 
 \RequirePackage{etoolbox}
-\AtBeginEnvironment{thebibliography}{%
-    \phantomsection
-    \addcontentsline{toc}{section}{\refname}
-    }
 % 超链接 hyperref 的设置
 \RequirePackage{hyperref}
 % 智能自动化交叉引用

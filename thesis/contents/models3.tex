@@ -77,7 +77,7 @@ $Var(X_i)=\sigma^2,Cov(X_i,X_j)=\rho\sigma^2$，
 可以使$\rho$减小，例如\textit{Bootstrap}方法。如果在形成单个决策树时
 使用不同的特征集合，可以进一步减少模型之间的相似度，从而减小方差。
 但是由于单个决策树没有关于所有特征的信息，所以不可避免的模型的偏差会增加。
-\par 使用Gini指数$Gini(x)=1-\sum_{i=1}^n (p_i)^2$（本问题中$n=2$）
+\par 使用\textit{Gini}指数$Gini(x)=1-\sum_{i=1}^n (p_i)^2$（本问题中$n=2$）
 作为损失函数，通过数值方法进行求解，确定每一次用于分割的特征。
 假设总特征数量为$p$，在随机森林中，每个决策树使用$[\sqrt{p}]$个特征，
 同时样本利用\textit{Bootstrap}方法从总样本集中取出。
@@ -117,16 +117,65 @@ $Var(X_i)=\sigma^2,Cov(X_i,X_j)=\rho\sigma^2$，
     \item \textit{PCA}特征降维。尝试使用一个低维的超平面（法向量记为$u$）
     近似原始数据空间中的数据点，定量描述为$\max_u \frac{1}{n}\sum_{i=1}^{n}(x^{(i)T}u)^2$，
     规范化条件为$\left\lVert u\right\rVert _2 =1$。求解得到$u$应当为
-    数据协方差矩阵的特征向量，选择前$k$个特征向量，将数据转换为：
+    数据协方差矩阵的特征向量，选择前$k$个特征向量，将原本$\mathbb{R}^{p}$数据转换为：
     \begin{equation*}
     x^{(i)} \mapsto (u_1^T x^{(i)},u_2^T x^{(i)},\ldots,u_k^T x^{(i)})\in
     \mathbb{R}^k
     \end{equation*}
 \end{enumerate}
 
-\paragraph{集成学习}
-树形模型的是方差较大、偏差较小的模型，弱学习器与之相反，其方差较小、偏差较大。
-集成弱学习器的过程是降低偏差的过程，直观上亦是对空间进行分割
+\paragraph{堆叠方法}
+堆叠学习是一种集成学习方法，其学习器分为两层：
+\begin{itemize}
+    \item 低层的学习器称为基学习器，高层的学习器称为元学习器
+    \item 基学习器有多个，它们的输出拼成新特征矩阵输入到唯一元学习器
+    \item 惯例上，基学习器复杂度较高、方差较大（如集成算法），元学习器
+    复杂度较低、可解释性较强（如决策树）
+\end{itemize}
+本项目中，基学习器选择为CatBoost, XGBoost, ExtraTrees三种集成学习
+分类器，选择随机森林作为元学习器。以下对基学习器的训练原理进行说明：
+\begin{itemize}
+    \item Extra-Trees(Extremely randomized trees, 极度随机树)的模型
+    结构与随机森林较为相似，都利用决策树作为基本分类模型，再通过权重调整
+    方式综合每个决策树的分类输出结果。不同的是：
+    \begin{itemize}
+        \item 在极度随机树中，决策树的分割
+        方式并不来源于对损失函数（例如\textit{Gini}指数）的最小化，而是完全随机地选择一个
+        特征和一个阈值，进行分割。
+        \item 这样形成的弱学习器偏差较大、方差较小，再通过
+        权重调整集成这些弱学习器，形成最终分类的强分类器。
+    \end{itemize}
+    \item CatBoost和XGBoost都是基于梯度的集成学习算法。通常集成算法的算法
+    伪代码展示在算法\ref{alg:forward-stagewise-additive}中。
+    \begin{algorithm}[ht]
+        \caption{正向逐阶段加法建模}
+        \DontPrintSemicolon
+        \SetAlgoLined
+        \KwIn{带标签数据集$\{x^{(i)},y^{(i)}\}_{i=1}^n$}
+        \KwOut{集成学习器$f(x)$}
+        \BlankLine
+        初始化$f_0(x)=0$\;
+        \For{$m=0\gets M$}{
+            $(\beta_m,\gamma_m)=\arg\min_{\beta,\gamma}\ \sum_{i=1}^n 
+            \mathcal{L}(y_i,f_{m-1}(x_i)+\beta G(x_i; \gamma))$\;
+            $f_m(x)\coloneqq f_{m-1}(x)+\beta_m G(x; \gamma_m)$\;
+        }
+        $f(x)\coloneqq f_{m}(x)$\;
+    \label{alg:forward-stagewise-additive}
+    \end{algorithm}
+    其中$\mathcal{L}$是损失函数，弱学习器为$G(x;\gamma)$，算法每一次循环寻找
+    弱学习器的合适参数$\gamma$和对应权重$\beta$。但是随着弱学习器复杂性的增加，
+    对于循环内优化问题的解析求解会变得愈发困难。基于梯度的集成学习方法利用数值
+    优化的方式，对于当前集成的学习器$f_{m-1}$求解梯度：
+    \begin{equation*}
+        g_{m-1} = \frac{\partial \mathcal{L}(y_i,f_{m-1}(x_i))}{\partial f_{m-1}(x_i)}
+    \end{equation*}
+    进而利用
+    \begin{equation*}
+    \gamma_m = \arg\min_{\gamma} \sum_{i=1}^{n}(g_{m-1}-G(x_i;\gamma))^2
+    \end{equation*}
+    求解当前的弱学习器的参数。
+\end{itemize}
 
 \subsubsection{数值求解}
 \paragraph{高斯判别分析}
@@ -146,10 +195,39 @@ $Var(X_i)=\sigma^2,Cov(X_i,X_j)=\rho\sigma^2$，
 \textit{PCA}中选择27个主成分，随机森林中决策树数量选择100棵，
 采用\textit{Bootstrap}方法生成每颗树的训练样本，迭代训练直到
 收敛。在原始的测试集上进行测试，得到的混淆矩阵展示在图\ref{fig:confusion-matrix-random-forest}中。
+随机森林模型准确率41.2\%，F1值为0.36。
+\par 根据随机森林的特征选择先后顺序，得到特征的重要性排序
+展示在图\ref{fig:feature-importance-random-forest}中\footnote{
+    作为预测的随机森林使用的是\textit{PCA}形成的特征，在进行特征选择时
+    随机森立的输入数据为原始数据矩阵。
+}。
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=.5\textwidth]{images/random_forest_confusion_matrix_unbalanced.png}
-    \caption{随机森林模型的混淆矩阵}
-    \label{fig:confusion-matrix-random-forest}
+    \includegraphics[width=.8\textwidth]{images/feature_importances_random_forest.png}
+    \caption{随机森林产生的特征重要性排序，同时标注出特征重要性的方差}
+    \label{fig:feature-importance-random-forest}
 \end{figure}
-随机森林模型准确率41.2\%，F1值为0.36。
+由于随机森林使用信息增益对特征进行选择，其对特征的选择与互信息的表现基本一致，
+借贷依赖仍然是最能反映公司运营情况的因素，但是其重要性波动较大。
+
+\paragraph{堆叠方法}
+堆叠方法的特征处理与随机森林一致。在原始测试集上进行测试，得到的混淆矩阵展示
+在图\ref{fig:confusion-matrix-ensemble}中。模型的F1值为0.20，准确率为
+71.4\%。
+\begin{figure}[ht]
+    \centering
+    \begin{minipage}[c]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{images/random_forest_confusion_matrix_unbalanced.png}
+        \subcaption{随机森林模型的混淆矩阵}
+        \label{fig:confusion-matrix-random-forest}
+    \end{minipage}
+    \begin{minipage}[c]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{images/ensemble_confusion_maxtrix_unbalanced.png}
+        \subcaption{集成学习（堆叠方法）模型的混淆矩阵}
+        \label{fig:confusion-matrix-ensemble}
+    \end{minipage}
+    \caption{随机森林和堆叠方法的混淆矩阵}
+    \label{fig:confusion-mat}
+\end{figure}

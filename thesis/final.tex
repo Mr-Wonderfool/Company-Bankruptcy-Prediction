@@ -1,11 +1,15 @@
 \documentclass{cumcmthesis}
 \usepackage{titlesec}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\renewcommand{\algorithmcfname}{算法}
+\SetKwInOut{KwIn}{输入}
+\SetKwInOut{KwOut}{输出}
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{0.2em}{}
 \titlespacing*{\paragraph}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
-\title{公司运营情况分析\vspace{-1ex}}
+\title{\bfseries\LARGE 公司运营情况分析与破产预测\vspace{-1ex}}
 \author{南佳延 \quad 徐志铭 \quad 朱雨夏}
 \date{\vspace{-5ex}}
 
@@ -13,8 +17,12 @@
 \maketitle
 
 \input{contents/abstract.tex}
+\input{contents/problem.tex}
+\input{contents/analysis.tex}
 \input{contents/models1.tex}
 \input{contents/models2.tex}
 \input{contents/models3.tex}
+\nocite{*}
+\printbibliography[heading=bibintoc,title=参考文献]
 
 \end{document}

@@ -1,0 +1,639 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{kaiser1974index}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0b670743ef0430f77973754bb4b78c70}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={Henry\bibnamedelima F.},
+           giveni={H\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=0b670743ef0430f77973754bb4b78c70}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={Henry\bibnamedelima F.},
+           giveni={H\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0b670743ef0430f77973754bb4b78c70}
+      \strng{fullhash}{0b670743ef0430f77973754bb4b78c70}
+      \strng{bibnamehash}{0b670743ef0430f77973754bb4b78c70}
+      \strng{authorbibnamehash}{0b670743ef0430f77973754bb4b78c70}
+      \strng{authornamehash}{0b670743ef0430f77973754bb4b78c70}
+      \strng{authorfullhash}{0b670743ef0430f77973754bb4b78c70}
+      \strng{nameabibnamehash}{0b670743ef0430f77973754bb4b78c70}
+      \strng{nameanamehash}{0b670743ef0430f77973754bb4b78c70}
+      \strng{nameafullhash}{0b670743ef0430f77973754bb4b78c70}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychometrika}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{An index of factorial simplicity}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{39}
+      \field{year}{1974}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{31\bibrangedash 36}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1007/BF02291575
+      \endverb
+      \keyw{kaiser1974index}
+    \endentry
+    \entry{bartlett1950tests}{article}{}
+      \name{author}{1}{}{%
+        {{hash=23a8fa0f7510e7bb3c08ef97baa9f90a}{%
+           family={Bartlett},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=23a8fa0f7510e7bb3c08ef97baa9f90a}{%
+           family={Bartlett},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{23a8fa0f7510e7bb3c08ef97baa9f90a}
+      \strng{fullhash}{23a8fa0f7510e7bb3c08ef97baa9f90a}
+      \strng{bibnamehash}{23a8fa0f7510e7bb3c08ef97baa9f90a}
+      \strng{authorbibnamehash}{23a8fa0f7510e7bb3c08ef97baa9f90a}
+      \strng{authornamehash}{23a8fa0f7510e7bb3c08ef97baa9f90a}
+      \strng{authorfullhash}{23a8fa0f7510e7bb3c08ef97baa9f90a}
+      \strng{nameabibnamehash}{23a8fa0f7510e7bb3c08ef97baa9f90a}
+      \strng{nameanamehash}{23a8fa0f7510e7bb3c08ef97baa9f90a}
+      \strng{nameafullhash}{23a8fa0f7510e7bb3c08ef97baa9f90a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{British Journal of Statistical Psychology}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{Tests of significance in factor analysis}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{3}
+      \field{year}{1950}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{77\bibrangedash 85}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1111/j.2044-8317.1950.tb00285.x
+      \endverb
+      \keyw{bartlett1950tests}
+    \endentry
+    \entry{lawley1962factor}{book}{}
+      \name{author}{2}{}{%
+        {{hash=38e99ace3df88db10381d8e97c2b3640}{%
+           family={Lawley},
+           familyi={L\bibinitperiod},
+           given={D.\bibnamedelimi N.},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=5ac3fbba4787c4c8e53b2b9a9fb79dcd}{%
+           family={Maxwell},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=38e99ace3df88db10381d8e97c2b3640}{%
+           family={Lawley},
+           familyi={L\bibinitperiod},
+           given={D.\bibnamedelimi N.},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=5ac3fbba4787c4c8e53b2b9a9fb79dcd}{%
+           family={Maxwell},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Butterworths}%
+      }
+      \strng{namehash}{e03c9a2a7868814c7c0d545bc96ed494}
+      \strng{fullhash}{b64386f0b8fb094b7eff38e327ef22a5}
+      \strng{bibnamehash}{b64386f0b8fb094b7eff38e327ef22a5}
+      \strng{authorbibnamehash}{b64386f0b8fb094b7eff38e327ef22a5}
+      \strng{authornamehash}{e03c9a2a7868814c7c0d545bc96ed494}
+      \strng{authorfullhash}{b64386f0b8fb094b7eff38e327ef22a5}
+      \strng{nameabibnamehash}{b64386f0b8fb094b7eff38e327ef22a5}
+      \strng{nameanamehash}{e03c9a2a7868814c7c0d545bc96ed494}
+      \strng{nameafullhash}{b64386f0b8fb094b7eff38e327ef22a5}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Factor analysis as a statistical method}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1962}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{lawley1962factor}
+    \endentry
+    \entry{mclachlan2004discriminant}{book}{}
+      \name{author}{1}{}{%
+        {{hash=de36d60ffaaea6ca58a16889994787da}{%
+           family={McLachlan},
+           familyi={M\bibinitperiod},
+           given={G.\bibnamedelimi J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=de36d60ffaaea6ca58a16889994787da}{%
+           family={McLachlan},
+           familyi={M\bibinitperiod},
+           given={G.\bibnamedelimi J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{de36d60ffaaea6ca58a16889994787da}
+      \strng{fullhash}{de36d60ffaaea6ca58a16889994787da}
+      \strng{bibnamehash}{de36d60ffaaea6ca58a16889994787da}
+      \strng{authorbibnamehash}{de36d60ffaaea6ca58a16889994787da}
+      \strng{authornamehash}{de36d60ffaaea6ca58a16889994787da}
+      \strng{authorfullhash}{de36d60ffaaea6ca58a16889994787da}
+      \strng{nameabibnamehash}{de36d60ffaaea6ca58a16889994787da}
+      \strng{nameanamehash}{de36d60ffaaea6ca58a16889994787da}
+      \strng{nameafullhash}{de36d60ffaaea6ca58a16889994787da}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Discriminant Analysis and Statistical Pattern Recognition}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{mclachlan2004discriminant}
+    \endentry
+    \entry{breiman2001random}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c4de625aef3b09e83edf76c200750fc6}{%
+           family={Breiman},
+           familyi={B\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=c4de625aef3b09e83edf76c200750fc6}{%
+           family={Breiman},
+           familyi={B\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{fullhash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{bibnamehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{authorbibnamehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{authornamehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{authorfullhash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{nameabibnamehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{nameanamehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{nameafullhash}{c4de625aef3b09e83edf76c200750fc6}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Machine Learning}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Random forests}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{45}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{5\bibrangedash 32}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1023/A:1010933404324
+      \endverb
+      \keyw{breiman2001random}
+    \endentry
+    \entry{chawla2002smote}{article}{}
+      \name{author}{4}{}{%
+        {{hash=517c300d6831b45e817a12c128e0d3c0}{%
+           family={Chawla},
+           familyi={C\bibinitperiod},
+           given={N.\bibnamedelimi V.},
+           giveni={N\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=8aa8d84745e95ea59fccbcc6d34e77b7}{%
+           family={Bowyer},
+           familyi={B\bibinitperiod},
+           given={K.\bibnamedelimi W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=d767a8acee927fe772fe5ec34f93073f}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={L.\bibnamedelimi O.},
+           giveni={L\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=d66be0948a5085778a35663d6fd6c8cc}{%
+           family={Kegelmeyer},
+           familyi={K\bibinitperiod},
+           given={W.\bibnamedelimi P.},
+           giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \name{namea}{4}{}{%
+        {{hash=517c300d6831b45e817a12c128e0d3c0}{%
+           family={Chawla},
+           familyi={C\bibinitperiod},
+           given={N.\bibnamedelimi V.},
+           giveni={N\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=8aa8d84745e95ea59fccbcc6d34e77b7}{%
+           family={Bowyer},
+           familyi={B\bibinitperiod},
+           given={K.\bibnamedelimi W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=d767a8acee927fe772fe5ec34f93073f}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={L.\bibnamedelimi O.},
+           giveni={L\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=d66be0948a5085778a35663d6fd6c8cc}{%
+           family={Kegelmeyer},
+           familyi={K\bibinitperiod},
+           given={W.\bibnamedelimi P.},
+           giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{25994a8b1023c628464384a919fac03e}
+      \strng{fullhash}{8c67ad2e38d858dfc32312d1f697f6e2}
+      \strng{bibnamehash}{06dbe04c33ed05d124ed5b3fcbf52433}
+      \strng{authorbibnamehash}{06dbe04c33ed05d124ed5b3fcbf52433}
+      \strng{authornamehash}{25994a8b1023c628464384a919fac03e}
+      \strng{authorfullhash}{8c67ad2e38d858dfc32312d1f697f6e2}
+      \strng{nameabibnamehash}{06dbe04c33ed05d124ed5b3fcbf52433}
+      \strng{nameanamehash}{25994a8b1023c628464384a919fac03e}
+      \strng{nameafullhash}{8c67ad2e38d858dfc32312d1f697f6e2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Artificial Intelligence Research}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{SMOTE: Synthetic Minority Over-sampling Technique}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{16}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{321\bibrangedash 357}
+      \range{pages}{37}
+      \verb{doi}
+      \verb 10.1613/jair.953
+      \endverb
+      \keyw{chawla2002smote}
+    \endentry
+    \entry{jolliffe2002principal}{book}{}
+      \name{author}{1}{}{%
+        {{hash=52e21501d20cb537e349fb16dca2c1f2}{%
+           family={Jolliffe},
+           familyi={J\bibinitperiod},
+           given={I.\bibnamedelimi T.},
+           giveni={I\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=52e21501d20cb537e349fb16dca2c1f2}{%
+           family={Jolliffe},
+           familyi={J\bibinitperiod},
+           given={I.\bibnamedelimi T.},
+           giveni={I\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{52e21501d20cb537e349fb16dca2c1f2}
+      \strng{fullhash}{52e21501d20cb537e349fb16dca2c1f2}
+      \strng{bibnamehash}{52e21501d20cb537e349fb16dca2c1f2}
+      \strng{authorbibnamehash}{52e21501d20cb537e349fb16dca2c1f2}
+      \strng{authornamehash}{52e21501d20cb537e349fb16dca2c1f2}
+      \strng{authorfullhash}{52e21501d20cb537e349fb16dca2c1f2}
+      \strng{nameabibnamehash}{52e21501d20cb537e349fb16dca2c1f2}
+      \strng{nameanamehash}{52e21501d20cb537e349fb16dca2c1f2}
+      \strng{nameafullhash}{52e21501d20cb537e349fb16dca2c1f2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{series}{Springer Series in Statistics}
+      \field{title}{Principal Component Analysis}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1007/b98835
+      \endverb
+      \keyw{jolliffe2002principal}
+    \endentry
+    \entry{prokhorenkova2018catboost}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=42f620790ac8405ed5aab11f8ff23a98}{%
+           family={Prokhorenkova},
+           familyi={P\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c23f1a00f0d72a58a5841bfecf47c31f}{%
+           family={Gusev},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=672553b8c2e8067c479b686a4c4f70a7}{%
+           family={Vorobev},
+           familyi={V\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=82769f8561843d63dcc5507d6d30ed1e}{%
+           family={Dorogush},
+           familyi={D\bibinitperiod},
+           given={A.\bibnamedelimi V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=41092dbda8ddb3289f5a0612566d8695}{%
+           family={Gulin},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{namea}{5}{}{%
+        {{hash=42f620790ac8405ed5aab11f8ff23a98}{%
+           family={Prokhorenkova},
+           familyi={P\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c23f1a00f0d72a58a5841bfecf47c31f}{%
+           family={Gusev},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=672553b8c2e8067c479b686a4c4f70a7}{%
+           family={Vorobev},
+           familyi={V\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=82769f8561843d63dcc5507d6d30ed1e}{%
+           family={Dorogush},
+           familyi={D\bibinitperiod},
+           given={A.\bibnamedelimi V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=41092dbda8ddb3289f5a0612566d8695}{%
+           family={Gulin},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{84679d1b13ca38011a8720d1080cbb17}
+      \strng{fullhash}{255a29349cf05b921242140e6f4fe1ff}
+      \strng{bibnamehash}{8eb6f978cbda9207692b028191a0898e}
+      \strng{authorbibnamehash}{8eb6f978cbda9207692b028191a0898e}
+      \strng{authornamehash}{84679d1b13ca38011a8720d1080cbb17}
+      \strng{authorfullhash}{255a29349cf05b921242140e6f4fe1ff}
+      \strng{nameabibnamehash}{8eb6f978cbda9207692b028191a0898e}
+      \strng{nameanamehash}{84679d1b13ca38011a8720d1080cbb17}
+      \strng{nameafullhash}{255a29349cf05b921242140e6f4fe1ff}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{CatBoost: unbiased boosting with categorical features}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{31}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{6638\bibrangedash 6648}
+      \range{pages}{11}
+      \keyw{prokhorenkova2018catboost}
+    \endentry
+    \entry{chen2016xgboost}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=17541c65107086b7d7dd596d7ad81405}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a3be5ea6b470ac63fe702e54e17ed48c}{%
+           family={Guestrin},
+           familyi={G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=17541c65107086b7d7dd596d7ad81405}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a3be5ea6b470ac63fe702e54e17ed48c}{%
+           family={Guestrin},
+           familyi={G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{97d371540f094c82bcf673670dba6c7d}
+      \strng{fullhash}{504b0676eab5f1fea28621d004e40d9a}
+      \strng{bibnamehash}{504b0676eab5f1fea28621d004e40d9a}
+      \strng{authorbibnamehash}{504b0676eab5f1fea28621d004e40d9a}
+      \strng{authornamehash}{97d371540f094c82bcf673670dba6c7d}
+      \strng{authorfullhash}{504b0676eab5f1fea28621d004e40d9a}
+      \strng{nameabibnamehash}{504b0676eab5f1fea28621d004e40d9a}
+      \strng{nameanamehash}{97d371540f094c82bcf673670dba6c7d}
+      \strng{nameafullhash}{504b0676eab5f1fea28621d004e40d9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{XGBoost: A Scalable Tree Boosting System}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{785\bibrangedash 794}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/2939672.2939785
+      \endverb
+      \keyw{chen2016xgboost}
+    \endentry
+    \entry{geurts2006extremely}{article}{}
+      \name{author}{3}{}{%
+        {{hash=537db72e2d340bfdb702c817ac65f12a}{%
+           family={Geurts},
+           familyi={G\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9488db71a9c7867ddbd598df1c5e5bd0}{%
+           family={Ernst},
+           familyi={E\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5424f9c88788d10f22b09546c10451cb}{%
+           family={Wehenkel},
+           familyi={W\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=537db72e2d340bfdb702c817ac65f12a}{%
+           family={Geurts},
+           familyi={G\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9488db71a9c7867ddbd598df1c5e5bd0}{%
+           family={Ernst},
+           familyi={E\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5424f9c88788d10f22b09546c10451cb}{%
+           family={Wehenkel},
+           familyi={W\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{b64e2c5e06d24f873f20f46637efa8ad}
+      \strng{fullhash}{a4c8a8fe40db58da04d61457fea67db7}
+      \strng{bibnamehash}{a4c8a8fe40db58da04d61457fea67db7}
+      \strng{authorbibnamehash}{a4c8a8fe40db58da04d61457fea67db7}
+      \strng{authornamehash}{b64e2c5e06d24f873f20f46637efa8ad}
+      \strng{authorfullhash}{a4c8a8fe40db58da04d61457fea67db7}
+      \strng{nameabibnamehash}{a4c8a8fe40db58da04d61457fea67db7}
+      \strng{nameanamehash}{b64e2c5e06d24f873f20f46637efa8ad}
+      \strng{nameafullhash}{a4c8a8fe40db58da04d61457fea67db7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Machine Learning}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Extremely randomized trees}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{63}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{3\bibrangedash 42}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1007/s10994-006-6226-1
+      \endverb
+      \keyw{geurts2006extremely}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
